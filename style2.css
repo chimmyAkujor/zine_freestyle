@@ -1,0 +1,66 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1449182325215-d517de72c42d?crop=entropy&fit=crop&fm=jpg&h=825&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200");
+    background-size: 100% 100%;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    margin:0;
+    font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+}
+.navbar {
+    border-radius: 0px;
+    box-shadow: 0 7px 17px #383838
+}
+.search-form {
+    border-radius: 30px 30px 30px 30px;
+    color: #fff;
+}
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;    
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+    color: #555;
+}
+.login-col {
+    background-color: #0b4c9e;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px #000;
+    
+}
+.login-col h2 {
+    color: #fff;
+    text-align: center;
+}
+.login-col a {
+    color: #fff;
+    text-decoration: none;
+}
+.site-footer {
+    background-color: dimgray;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+.transp{
+    background: #1A2980; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1A2980 , #26D0CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin-bottom: 0px;
+}

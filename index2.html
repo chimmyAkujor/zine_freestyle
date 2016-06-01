@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title> Welcome to Zine | Your favorite online magazine</title>
-   <!-- <link rel="stylesheet" href="style.css">-->
+    <title> Welcome to d'ZINE | Share Your Art With The World</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style2.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar navbar-inverse">
-        <div class="containter-fluid">
+        <div class="container-fluid">
            
             <!-- logo -->
             <div class="navbar-header">
-                <a href="#" class="navbar-brand"> ZINE </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"> <i>d'</i>ZINE </a>
             </div>
             
             <!--MENU items -->
-            <div>
+            <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
                     <li class="active"> <a href="#"> Home</a></li>
                     <li><a href="#">About</a> </li>
@@ -39,15 +44,81 @@
                     </li>
                 </ul>
                 
-                <!--right align -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Logout </a></li>
-                </ul>
                 
+                <form class="navbar-form navbar-right " role="search">
+                    <div class="form-group right-inner-addon">
+                         <i class="glyphicon glyphicon-search"></i>
+                         <input type="text" class="search-form form-control navbar-inverse" placeholder="Search">
+                     </div>
+                </form> 
             </div>
-            
         </div>
     </nav>
-    
+    <!-- existing user login -->
+    <div class="row container">
+        <div class="col-md-5 col-md-offset-9 login-col">
+            <div class="row">
+                <h2> Existing Users </h2>
+            </div>
+            <div class="row form-group container-fluid">
+                
+                    <div class="form-group col-md-6">
+                            <input class="form-control"type="text" placeholder="Email/Username">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                        <div class=" col-md-12">
+                            <button class="btn btn-block btn-success"> Sign In </button>
+                        </div>
+                        
+                            <div class="col-md-4">
+                                <label style="color:#fff">
+                                    <input type="checkbox"> Stay Signed In
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <a href="#"> Forgot Password?</a>
+                            </div>
+                        
+           </div>
+           
+        </div>
+    </div><br>
+    <!--new user signup-->
+    <div class="row container">
+        <div class="col-md-5 col-md-offset-9 login-col">
+            <div class="row">
+                <h2> New Users </h2>
+            </div>
+            <div class="row form-group container-fluid">
+                <div class="form-group col-md-12">
+                    <input class="form-control" type="email" placeholder="Email Adress">
+                </div>
+                <div class="form-group col-md-12">
+                    <input class="form-control" type="text" placeholder="Choose a Username">
+                </div>
+                <div class="form-group col-md-12">
+                    <input class="form-control" type="password" placeholder="New Password">
+                </div>
+                <div class="form-group col-md-12">
+                    <input class="form-control" type="password" placeholder="Confirm Password">
+                </div>
+                <div class=" col-md-12">
+                            <button class="btn btn-block btn-success"> Sign Up </button>
+                </div>
+            </div>
+           
+        </div>
+    </div> 
+    <!--footer -->
+    <footer class="site-footer">
+       <div class="container">
+            <p>
+                &copy d'ZINE Inc 2016
+            </p>
+       </div>
+    </footer>
+    <div class="transp"></div>
 </body>    
 </html>
